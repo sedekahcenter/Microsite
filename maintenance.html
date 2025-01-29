@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            text-align: center; /* Memastikan teks terpusat */
+            padding: 20px; /* Memberikan sedikit padding */
+        }
+        .container {
+            max-width: 600px; /* Membatasi lebar kontainer */
+            width: 100%; /* Memastikan kontainer responsif */
+        }
+        img {
+            max-width: 100%; /* Memastikan logo responsif */
+            height: auto; /* Memastikan proporsi logo tetap terjaga */
+            margin-bottom: 20px; /* Memberikan jarak di bawah logo */
+        }
+        h1 {
+            font-size: 2.5em; /* Ukuran font responsif */
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em; /* Ukuran font responsif */
+            margin-bottom: 30px;
+        }
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto; /* Pastikan loader berada di tengah */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Media query untuk perangkat kecil */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em; /* Ukuran font lebih kecil untuk perangkat kecil */
+            }
+            p {
+                font-size: 1em; /* Ukuran font lebih kecil untuk perangkat kecil */
+            }
+            .loader {
+                width: 40px; /* Ukuran loader lebih kecil untuk perangkat kecil */
+                height: 40px; /* Ukuran loader lebih kecil untuk perangkat kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://sedekahcenter.id/wp-content/uploads/2023/07/Header_Logo.png" alt="Logo">
+        <h1>Website Sedang Dalam Perawatan</h1>
+        <p>Mohon maaf atas ketidaknyamanan ini. Kami sedang melakukan perbaikan.</p>
+        <div class="loader"></div>
+        <p>Silakan cek kembali nanti.</p>
+    </div>
+</body>
+</html>
